@@ -1,9 +1,9 @@
-<% if @article.erros.any? %>
+<% if @article.errors.any? %>
 <h2>
   The following erros prevented the articles from gettign creatd 
 </h2>
 <ul>
-  <% @article.erros.full_messages.each do |msg| %>
+  <% @article.errors.full_messages.each do |msg| %>
   <li><%= msg %></li>
   <% end %>
 </ul>
@@ -22,4 +22,4 @@
 </p>
 <% end %>
 
-<%= link_to "Back to article listing", articles_path %>
+<%= link_to "Back to articles listing", articles_path %>
