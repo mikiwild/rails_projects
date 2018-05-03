@@ -50,5 +50,6 @@ class UsersController < ApplicationController
     if current_user != @user
       flash[:danger] = "You can only edit your own accont"
       redirect_to root_path
+    end
   end
 end
